@@ -43,33 +43,36 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 336.0, 43.0, 154.0, 47.0 ],
+					"patching_rect" : [ 146.0, 24.5, 156.0, 47.0 ],
+					"presentation_rect" : [ 146.0, 24.5, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "somewhere in your patch, then this will get a bang each frame."
+					"text" : "You'll need to have a jit.world object sending out renderbangs"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-4",
+					"color" : [ 1.0, 0.741176, 0.196078, 1.0 ],
+					"id" : "obj-32",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 248.0, 43.0, 81.0, 22.0 ],
+					"patching_rect" : [ 120.083374, 266.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "s renderbang"
+					"text" : "s mouseY"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "comment",
+					"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
+					"id" : "obj-29",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 154.0, 43.0, 92.0, 20.0 ],
+					"patching_rect" : [ 49.5, 266.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "If you've got an"
+					"text" : "s mouseX"
 				}
 
 			}
@@ -80,7 +83,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 184.0, 224.5, 150.0, 33.0 ],
+					"patching_rect" : [ 181.0, 220.5, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "XY coordinates of mouse, normalized to screen size."
 				}
@@ -95,7 +98,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 117.0, 230.0, 50.0, 22.0 ],
+					"patching_rect" : [ 114.0, 226.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -109,7 +112,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 52.5, 230.0, 50.0, 22.0 ],
+					"patching_rect" : [ 49.5, 226.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -121,7 +124,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 101.5, 178.0, 29.5, 22.0 ],
+					"patching_rect" : [ 98.5, 174.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "/ 0."
 				}
@@ -134,7 +137,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 52.5, 178.0, 29.5, 22.0 ],
+					"patching_rect" : [ 49.5, 174.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "/ 0."
 				}
@@ -147,7 +150,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 170.083374, 128.0, 29.5, 22.0 ],
+					"patching_rect" : [ 167.083374, 124.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "$4"
 				}
@@ -160,7 +163,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 131.0, 128.0, 29.5, 22.0 ],
+					"patching_rect" : [ 128.0, 124.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "$3"
 				}
@@ -168,12 +171,13 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.702269, 0.811747, 0.303388, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 39.0, 43.0, 79.0, 22.0 ],
+					"patching_rect" : [ 36.0, 30.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "r renderbang"
 				}
@@ -186,7 +190,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
-					"patching_rect" : [ 131.0, 90.0, 68.0, 22.0 ],
+					"patching_rect" : [ 128.0, 86.0, 68.0, 22.0 ],
 					"style" : "",
 					"text" : "screensize"
 				}
@@ -199,7 +203,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "int", "int", "int", "int", "int" ],
-					"patching_rect" : [ 39.0, 90.0, 73.0, 22.0 ],
+					"patching_rect" : [ 36.0, 86.0, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "mousestate"
 				}
@@ -245,6 +249,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
