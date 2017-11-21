@@ -2,9 +2,9 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,12 +38,70 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 356.0, 30.0, 104.0, 87.0 ],
+					"presentation_linecount" : 6,
+					"presentation_rect" : [ 356.0, 30.0, 104.0, 87.0 ],
+					"style" : "",
+					"text" : "See weird glitches? Sometimes you can fix them by flipping this toggle"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 107.0, 39.5, 37.0, 22.0 ],
+					"presentation_rect" : [ 107.0, 39.5, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "open"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 319.0, 95.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 319.0, 95.0, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 311.0, 130.0, 88.0, 22.0 ],
+					"presentation_rect" : [ 311.0, 130.0, 88.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend mode"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"color" : [ 0.043137, 0.364706, 0.094118, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 142.0, 281.0, 69.0, 22.0 ],
+					"presentation_rect" : [ 142.0, 281.0, 69.0, 22.0 ],
 					"style" : "",
 					"text" : "s soundtex"
 				}
@@ -56,7 +114,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 192.5, 23.0, 104.0, 33.0 ],
+					"patching_rect" : [ 165.0, 34.0, 104.0, 33.0 ],
+					"presentation_rect" : [ 165.0, 34.0, 104.0, 33.0 ],
 					"style" : "",
 					"text" : "Get sound as a texture"
 				}
@@ -70,6 +129,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 142.0, 202.500061, 273.0, 22.0 ],
+					"presentation_rect" : [ 142.0, 202.500061, 273.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.texture @dim 320 1 @type float16 @adapt 0"
 				}
@@ -83,6 +143,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
 					"patching_rect" : [ 142.0, 236.500061, 293.0, 22.0 ],
+					"presentation_rect" : [ 142.0, 236.500061, 293.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.texture @dim 1280 720 @type float16 @adapt 0"
 				}
@@ -96,6 +157,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 170.333374, 124.666656, 79.0, 22.0 ],
+					"presentation_rect" : [ 170.333374, 124.666656, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "r renderbang"
 				}
@@ -109,6 +171,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 142.0, 166.5, 205.0, 22.0 ],
+					"presentation_rect" : [ 142.0, 166.5, 205.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.catch~ @mode 0 @framesize 320"
 				}
@@ -121,6 +184,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 64.0, 166.5, 45.0, 45.0 ],
+					"presentation_rect" : [ 64.0, 166.5, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -134,6 +198,7 @@
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 64.0, 43.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 64.0, 43.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -146,6 +211,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
 					"patching_rect" : [ 64.0, 95.0, 231.0, 22.0 ],
+					"presentation_rect" : [ 64.0, 95.0, 231.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
@@ -182,6 +248,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-92", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
